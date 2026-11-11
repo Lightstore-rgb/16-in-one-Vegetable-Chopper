@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Kitchen Art 16-in-1 Vegetable Cutter with 7 interchangeable stainless-steel blades and bonus pull-string chopper. Rs. 2,799 with free delivery and cash on delivery in Pakistan.">
+  <title>16-in-1 Vegetable Cutter | Kitchen Art Pakistan</title>
+  <style>
+    :root {
+      --black: #171717;
+      --text: #303030;
+      --muted: #707070;
+      --line: #e7e7e7;
+      --soft: #f7f7f7;
+      --white: #fff;
+      --accent: #222;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--white);
+      color: var(--text);
+      font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+      color: #555;
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 12px;
+      letter-spacing: .035em;
+    }
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+    .header-inner {
+      max-width: var(--max);
+      margin: auto;
+      padding: 19px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      color: var(--black);
+      font-size: 25px;
+      font-weight: 650;
+      letter-spacing: -.07em;
+      line-height: 1;
+    }
+    .logo small {
+      display: block;
+      margin-top: 6px;
+      color: #777;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: .22em;
+    }
+    .header-note { color: #666; font-size: 12px; }
+    main { max-width: var(--max); margin: auto; padding: 0 22px; }
+    .product { padding: 34px 0 38px; }
+    h1 {
+      color: var(--black);
+      font-size: clamp(27px, 3.6vw, 39px);
+      line-height: 1.2;
+      letter-spacing: -.045em;
+      font-weight: 600;
+      margin: 0 0 20px;
+    }
+    .product-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, .82fr);
+      gap: 42px;
+      align-items: start;
+    }
+    .gallery { min-width: 0; }
+    .main-image-wrap {
+      background: #f6f6f4;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 16px;
+    }
+    .main-image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+    .thumbs {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 9px;
+      margin-top: 10px;
+    }
+    .thumb {
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: white;
+      cursor: pointer;
+    }
+    .thumb.active { border: 2px solid #333; padding: 3px; }
+    .thumb img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: contain;
+    }
+    .purchase {
+      border: 1px solid var(--line);
+      padding: 22px;
+      border-radius: 4px;
+    }
+    .price-line {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin: 0 0 4px;
+    }
+    .price {
+      color: var(--black);
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 650;
+      letter-spacing: -.04em;
+    }
+    .old-price { color: #888; text-decoration: line-through; font-size: 15px; }
+    .saving { color: #555; font-size: 12px; font-weight: 650; }
+    .delivery-line {
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 13px 14px;
+      margin: 17px 0;
+      color: #444;
+      font-size: 13px;
+      background: #fafafa;
+    }
+    .delivery-line p { margin: 3px 0; }
+    .buy-button {
+      width: 100%;
+      min-height: 49px;
+      border: 1px solid #171717;
+      border-radius: 3px;
+      background: #171717;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 650;
+      cursor: pointer;
+      transition: background .2s ease;
+    }
+    .buy-button:hover { background: #3b3b3b; }
+    .payment-note { color: #777; font-size: 11px; text-align: center; margin: 10px 0 0; }
+    .section { border-top: 1px solid var(--line); padding: 34px 0 39px; }
+    h2 {
+      color: var(--black);
+      font-size: 23px;
+      letter-spacing: -.035em;
+      line-height: 1.3;
+      margin: 0 0 18px;
+      font-weight: 650;
+    }
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      table-layout: fixed;
+    }
+    .spec-table th, .spec-table td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px 15px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+    .spec-table th {
+      width: 36%;
+      background: #f7f7f7;
+      color: #555;
+      font-weight: 650;
+    }
+    .spec-table td { color: #252525; }
+    .spec-table tr:last-child th, .spec-table tr:last-child td { border-bottom: 0; }
+    .description {
+      max-width: 850px;
+      color: #444;
+      font-size: 14px;
+    }
+    .description p { margin: 0 0 14px; }
+    .description ul { margin: 9px 0 0; padding-left: 20px; }
+    .description li { margin: 6px 0; }
+    .description strong { color: #222; }
+    .description-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .description-gallery img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1.15 / 1;
+      object-fit: contain;
+      background: #f6f6f4;
+      border: 1px solid var(--line);
+      padding: 10px;
+    }
+    .video-box {
+      max-width: 420px;
+      margin: 0 auto;
+      background: #000;
+      aspect-ratio: 9 / 16;
+    }
+    .video-box iframe { display: block; width: 100%; height: 100%; border: 0; }
+    .video-caption {
+      color: #777;
+      text-align: center;
+      font-size: 12px;
+      margin: 12px 0 0;
+    }
+    .reviews-note {
+      border: 1px solid var(--line);
+      background: #fafafa;
+      padding: 18px;
+      color: #555;
+      font-size: 13px;
+    }
+    .reviews-note strong { color: #222; }
+    .footer {
+      margin-top: 15px;
+      background: #f7f7f7;
+      border-top: 1px solid var(--line);
+    }
+    .footer-inner {
+      max-width: var(--max);
+      margin: auto;
+      padding: 28px 22px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 25px;
+    }
+    .footer-brand { color: #171717; font-weight: 650; font-size: 18px; letter-spacing: -.04em; }
+    .footer p { margin: 6px 0 0; color: #777; font-size: 11px; }
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px 22px;
+      color: #777;
+      text-align: right;
+      font-size: 11px;
+    }
+    .footer-legal a { color: inherit; text-decoration: none; }
+    .footer-legal a:hover { text-decoration: underline; color: #333; }
+    .copyright {
+      border-top: 1px solid #e5e5e5;
+      text-align: center;
+      padding: 12px 18px;
+      color: #888;
+      font-size: 10px;
+    }
+
+    /* Order form is intentionally hidden until the customer selects Buy Now. */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      padding: 18px;
+      background: rgba(0,0,0,.58);
+      align-items: center;
+      justify-content: center;
+    }
+    .modal.open { display: flex; }
+    .modal-card {
+      width: min(100%, 470px);
+      max-height: 92vh;
+      overflow-y: auto;
+      background: #fff;
+      border-radius: 5px;
+      padding: 25px;
+      position: relative;
+      box-shadow: 0 18px 70px rgba(0,0,0,.2);
+    }
+    .modal-close {
+      position: absolute;
+      top: 13px;
+      right: 14px;
+      width: 32px;
+      height: 32px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: #fff;
+      color: #333;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .modal-card h2 { margin: 0 35px 5px 0; font-size: 22px; }
+    .modal-intro { color: #777; font-size: 12px; margin: 0 0 19px; }
+    .form-row { margin-bottom: 13px; }
+    .form-row label { display: block; margin-bottom: 5px; color: #444; font-size: 12px; font-weight: 650; }
+    .form-row input, .form-row textarea {
+      width: 100%;
+      border: 1px solid #d9d9d9;
+      border-radius: 3px;
+      padding: 11px 12px;
+      color: #222;
+      background: #fff;
+      outline: none;
+      font-size: 13px;
+    }
+    .form-row input:focus, .form-row textarea:focus { border-color: #555; }
+    .form-row textarea { min-height: 76px; resize: vertical; }
+    .form-total {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      margin: 5px 0 14px;
+      border-top: 1px solid var(--line);
+      color: #333;
+      font-size: 13px;
+      font-weight: 650;
+    }
+    .thank-you { padding-top: 8px; color: #444; font-size: 14px; }
+    .thank-you h2 { margin: 0 0 12px; color: #171717; }
+    .thank-you p { margin: 0 0 13px; }
+    .thank-you .buy-button { margin-top: 8px; }
+    .success-message {
+      display: none;
+      margin-top: 13px;
+      padding: 12px;
+      border: 1px solid #ddd;
+      background: #f7f7f7;
+      color: #333;
+      font-size: 12px;
+      white-space: pre-line;
+    }
+    @media (max-width: 760px) {
+      main { padding: 0 15px; }
+      .header-inner { padding: 16px 15px; }
+      .product { padding-top: 25px; }
+      .product-layout { grid-template-columns: 1fr; gap: 20px; }
+      .purchase { padding: 18px; }
+      .purchase h1 { font-size: clamp(25px, 6vw, 31px); }
+      .footer-inner { padding: 24px 15px; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 27px; margin-bottom: 17px; }
+      h2 { font-size: 20px; }
+      .spec-table th, .spec-table td { padding: 10px 9px; font-size: 12px; }
+      .spec-table th { width: 39%; }
+      .description-gallery { gap: 8px; }
+      .modal-card { padding: 22px 18px; }
+      .footer-inner { display: block; }
+      .footer-legal { text-align: left; margin-top: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">FREE DELIVERY ACROSS PAKISTAN &nbsp; | &nbsp; CASH ON DELIVERY ONLY</div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#" aria-label="Kitchen Art home">Kitchen Art<small>KITCHEN ESSENTIALS</small></a>
+      <div class="header-note">Online Store · Pakistan</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="product">
+      <div class="product-layout">
+        <div class="gallery">
+          <div class="main-image-wrap">
+            <img id="mainImage" class="main-image"
+              src="https://m.media-amazon.com/images/I/71RQ6kcRy2L._AC_SL1500_.jpg"
+              alt="16-in-1 gray-green vegetable cutter">
+          </div>
+          <div class="thumbs" aria-label="Product images">
+            <button class="thumb active" type="button" data-image="https://m.media-amazon.com/images/I/71RQ6kcRy2L._AC_SL1500_.jpg" aria-label="Product image 1"><img src="https://m.media-amazon.com/images/I/71RQ6kcRy2L._AC_SL1500_.jpg" alt=""></button>
+            <button class="thumb" type="button" data-image="https://m.media-amazon.com/images/I/71HlTa9aXsL._AC_SL1500_.jpg" aria-label="Product image 2"><img src="https://m.media-amazon.com/images/I/71HlTa9aXsL._AC_SL1500_.jpg" alt=""></button>
+            <button class="thumb" type="button" data-image="https://m.media-amazon.com/images/I/71hRPTwTljL._AC_SL1500_.jpg" aria-label="Product image 3"><img src="https://m.media-amazon.com/images/I/71hRPTwTljL._AC_SL1500_.jpg" alt=""></button>
+            <button class="thumb" type="button" data-image="https://m.media-amazon.com/images/I/71OA2QAJUkL._AC_SL1500_.jpg" aria-label="Product image 4"><img src="https://m.media-amazon.com/images/I/71OA2QAJUkL._AC_SL1500_.jpg" alt=""></button>
+          </div>
+        </div>
+
+        <aside class="purchase">
+          <h1>16-in-1 Vegetable Cutter &amp; Food Chopper</h1>
+          <div class="price-line">
+            <span class="price">Rs. 2,799</span>
+            <span class="old-price">Rs. 2,999</span>
+          </div>
+          <div class="saving">You save Rs. 200</div>
+          <div class="delivery-line">
+            <p><strong>Delivery:</strong> Free across Pakistan</p>
+            <p><strong>Estimated delivery:</strong> 3–5 days to your address</p>
+            <p><strong>Payment:</strong> Cash on Delivery only</p>
+            <p><strong>Dispatch:</strong> Through a courier partner</p>
+          </div>
+          <button class="buy-button" type="button" id="openOrder">Buy Now</button>
+          <p class="payment-note">Pay in cash when your order is delivered.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="specifications">
+      <h2>Product Specifications</h2>
+      <table class="spec-table">
+        <tbody>
+          <tr><th>Brand</th><td>QDGMXIV</td></tr>
+          <tr><th>Product</th><td>16-in-1 Vegetable Cutter</td></tr>
+          <tr><th>Dimensions</th><td>13 × 4.5 × 4.7 inches</td></tr>
+          <tr><th>Material (listed)</th><td>TOP1</td></tr>
+          <tr><th>Colour</th><td>Gray Green</td></tr>
+          <tr><th>Blade material</th><td>Stainless steel</td></tr>
+          <tr><th>Blades</th><td>7 interchangeable blades</td></tr>
+          <tr><th>Features</th><td>Interchangeable blades, lightweight, multipurpose, portable, removable blade</td></tr>
+          <tr><th>Suggested uses</th><td>Beans, bread, cheese, egg, meat and vegetables</td></tr>
+          <tr><th>Care instructions</th><td>Listed as dishwasher safe; rinse accessories after use</td></tr>
+          <tr><th>Item weight</th><td>16 oz (approximately 454 g)</td></tr>
+          <tr><th>Additional accessory</th><td>Hand pull-string onion chopper</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" id="description">
+      <h2>Product Description</h2>
+      <div class="description">
+        <p>Make everyday food preparation more convenient with this 16-in-1 vegetable cutter. It includes 7 interchangeable stainless-steel blades for different slicing, dicing and shredding tasks, along with a bonus hand pull-string chopper for onion, garlic and ginger.</p>
+        <p>The container collects chopped ingredients as you work. Its compact size makes it suitable for everyday kitchen use and convenient storage.</p>
+        <ul>
+          <li><strong>Multiple cutting options:</strong> Use the interchangeable blades for slicing, dicing and shredding.</li>
+          <li><strong>Pull-string chopper:</strong> Chop onion, garlic and ginger into small pieces or a semi-paste consistency.</li>
+          <li><strong>Food collection container:</strong> Helps keep prepared ingredients together while you work.</li>
+          <li><strong>Compact design:</strong> Measures 13 × 4.5 × 4.7 inches.</li>
+          <li><strong>Practical preparation:</strong> Cut hard vegetables such as carrots, potatoes and beets into smaller pieces before use.</li>
+        </ul>
+      </div>
+
+      <div class="description-gallery">
+        <img src="https://m.media-amazon.com/images/I/71HlTa9aXsL._AC_SL1500_.jpg" alt="Vegetable cutter accessories">
+        <img src="https://m.media-amazon.com/images/I/71hRPTwTljL._AC_SL1500_.jpg" alt="Vegetable cutter product details">
+        <img src="https://m.media-amazon.com/images/I/71OA2QAJUkL._AC_SL1500_.jpg" alt="Vegetable cutter functions">
+      </div>
+    </section>
+
+    <section class="section" id="video">
+      <h2>Product Video</h2>
+      <div class="video-box">
+        <iframe
+          src="https://www.youtube.com/embed/kIbEat1C1Hc"
+          title="16-in-1 Vegetable Cutter demonstration"
+          loading="lazy"
+          referrerpolicy="origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <p class="video-caption">Watch the product demonstration on this page.</p>
+    </section>
+
+    <section class="section" id="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="reviews-note"><strong>Reviews will appear here.</strong> Customer feedback should be added after genuine orders and verified customer experiences. No sample or invented reviews are displayed.</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Kitchen Art</div>
+        <p>Kitchen essentials for everyday use.</p>
+      </div>
+      <nav class="footer-legal" aria-label="Legal information">
+        <a href="#terms-of-use">Conditions of Use</a>
+        <a href="#privacy-notice">Privacy Notice</a>
+        <a href="#privacy-disclosure">Privacy Disclosure</a>
+        <a href="#privacy-choices">Your Privacy Choices</a>
+      </nav>
+    </div>
+    <div class="copyright">© <span id="year"></span> Kitchen Art. All rights reserved.</div>
+  </footer>
+
+  <!-- Order form stays hidden until Buy Now is selected. -->
+  <div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+    <div class="modal-card">
+      <button class="modal-close" type="button" id="closeOrder" aria-label="Close order form">×</button>
+      <h2 id="orderTitle">Cash on Delivery Order</h2>
+      <p class="modal-intro">Enter your delivery details. Free delivery in 3–5 days. Pay by Cash on Delivery.</p>
+      <div id="checkoutFormView">
+      <form id="orderForm" action="https://formspree.io/f/mdegnlob" method="POST">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Mobile number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="03XX XXXXXXX" required>
+        </div>
+        <div class="form-row">
+          <label for="city">City</label>
+          <input id="city" name="city" autocomplete="address-level2" required>
+        </div>
+        <div class="form-row">
+          <label for="address">Complete delivery address</label>
+          <textarea id="address" name="address" autocomplete="street-address" placeholder="House, street, area and nearby landmark" required></textarea>
+        </div>
+        <input type="hidden" name="Product" value="16-in-1 Vegetable Cutter & Food Chopper">
+        <input type="hidden" name="Order total" value="Rs. 2,799">
+        <input type="hidden" name="Delivery" value="Free delivery; estimated 3–5 days">
+        <input type="hidden" name="Payment method" value="Cash on Delivery">
+        <input type="hidden" name="_subject" value="New Kitchen Art website order">
+        <div class="form-total"><span>Total payable</span><span>Rs. 2,799</span></div>
+        <button class="buy-button" id="submitOrder" type="submit">Place Order</button>
+        <div class="success-message" id="orderResult" role="status" aria-live="polite"></div>
+      </form>
+      </div>
+      <section id="thankYouView" class="thank-you" hidden aria-live="polite">
+        <h2>Thank you for your order.</h2>
+        <p>Your order request has been submitted successfully to Kitchen Art.</p>
+        <p>We will contact you to confirm your order. Your parcel is expected to arrive within <strong>3–5 days</strong> at the delivery address you provided.</p>
+        <p>Payment is due in cash when your order is delivered.</p>
+        <button class="buy-button" type="button" id="finishOrder">Continue shopping</button>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // Product image selector
+    const mainImage = document.getElementById('mainImage');
+    document.querySelectorAll('.thumb').forEach((button) => {
+      button.addEventListener('click', () => {
+        mainImage.src = button.dataset.image;
+        document.querySelectorAll('.thumb').forEach((thumb) => thumb.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+
+    // Reveal the order form only after Buy Now is clicked.
+    const modal = document.getElementById('orderModal');
+    const openOrder = () => {
+      modal.classList.add('open');
+      document.getElementById('name').focus();
+      document.body.style.overflow = 'hidden';
+    };
+    const closeOrder = () => {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+    document.getElementById('openOrder').addEventListener('click', openOrder);
+    document.getElementById('closeOrder').addEventListener('click', closeOrder);
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) closeOrder();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeOrder();
+    });
+
+    // Submit the order directly to Formspree and show the confirmation only on success.
+    const orderForm = document.getElementById('orderForm');
+    const submitOrder = document.getElementById('submitOrder');
+    const checkoutFormView = document.getElementById('checkoutFormView');
+    const thankYouView = document.getElementById('thankYouView');
+
+    orderForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const result = document.getElementById('orderResult');
+      if (!orderForm.reportValidity()) return;
+
+      submitOrder.disabled = true;
+      submitOrder.textContent = 'Submitting…';
+      result.style.display = 'block';
+      result.textContent = 'Sending your order securely. Please wait.';
+
+      try {
+        const response = await fetch(orderForm.action, {
+          method: 'POST',
+          body: new FormData(orderForm),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (!response.ok) {
+          let message = 'We could not submit your order. Please try again.';
+          try {
+            const payload = await response.json();
+            if (payload.errors) message = payload.errors.map(error => error.message).join(' ');
+          } catch (_) {}
+          throw new Error(message);
+        }
+
+        checkoutFormView.hidden = true;
+        thankYouView.hidden = false;
+        document.getElementById('orderTitle').textContent = 'Order request received';
+      } catch (error) {
+        result.textContent = error.message || 'Network error. Please check your connection and try again.';
+        submitOrder.disabled = false;
+        submitOrder.textContent = 'Place Order';
+      }
+    });
+
+    document.getElementById('finishOrder').addEventListener('click', () => {
+      closeOrder();
+      orderForm.reset();
+      checkoutFormView.hidden = false;
+      thankYouView.hidden = true;
+      document.getElementById('orderTitle').textContent = 'Cash on Delivery Order';
+      const result = document.getElementById('orderResult');
+      result.style.display = 'none';
+      result.textContent = '';
+      submitOrder.disabled = false;
+      submitOrder.textContent = 'Place Order';
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
